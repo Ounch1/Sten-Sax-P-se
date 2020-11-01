@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StenSaxPåse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ///Spelare Val
+            Console.WriteLine("Välj Sten Sax eller Pose");
+            string SV = Console.ReadLine();
+            ///Dator Val
+            Random r = new Random();
+            int DV = r.Next(4);
+            
+            ///Spelet
+            if (DV == 1)
+            {
+                if (SV == "Sten")
+                {
+                    Console.WriteLine("Dator väljer sten");
+                    Console.WriteLine("Ingen Vann");
+                }
+                else if (SV == "Sax")
+                {
+                    Console.WriteLine("Dator väljer sten");
+                    Console.WriteLine("Dator Vann");
+
+                }
+               else if (SV == "Påse")
+                {
+                    Console.WriteLine("Dator väljer sten");
+                    Console.WriteLine("Spelare vann");
+                }
+                if (DV == 2)
+                {
+                    if (SV == "Sten")
+                    {
+                        Console.WriteLine("Dator väljer Sax");
+                        Console.WriteLine("Spelare vann");
+
+                    }
+                    else if (SV == "Sax")
+                    {
+                        Console.WriteLine("Dator väljer Sax");
+                        Console.WriteLine("Ingen Vann");
+
+                    }
+                    else if (SV == "Påse")
+                    {
+                        Console.WriteLine("Dator väljer Sax");
+                        Console.WriteLine("Dator Vann");
+                    }
+                  
+                }
+                else if (DV == 3)
+                {
+                    if (SV == "Sten")
+                    {
+                        Console.WriteLine("Dator väljer påse");
+                        Console.WriteLine("Dator Vann");
+
+                    }
+                    else if (SV == "Sax")
+                    {
+                        Console.WriteLine("Dator väljer påse");
+                        Console.WriteLine("Spelare Vann");
+
+                    }
+                    else if (SV == "Påse")
+                    {
+                        Console.WriteLine("Dator väljer påse");
+                        Console.WriteLine("Ingen Vann");
+
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Du måste välja Sten Sax eller Påse!");
+
+                }
+
+            }
+            Console.ReadLine();
+            }
+        }
+    }
+
+    
+
+    
