@@ -1,3 +1,11 @@
+
+///Hi! so im trying to create a rock paper scissors program in visual studio but for 
+some reason program only responds when it picks rock, otherwise it just 
+closes after player is ready with his choice. What am i doing wrong? Please help 
+
+///Also sorry that it is in Swedish, Sten is rock, Sax is Scissors and Påse is paper. 
+Vann means won, Spelare means Player, Dator is Computer and Väljer is Chooses
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
